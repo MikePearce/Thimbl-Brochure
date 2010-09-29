@@ -1,0 +1,8 @@
+-- This is the Thimbl brochure site
+
+Visit http://thimbl.net to see it in action.
+
+-- Interesting?
+I didn't want to have to edit the menu for each page every time I added a new page. Also, the server it's going on doesn't have server-side includes. So, I used the #hash value to help decide which page the ajax should load.
+
+Pretty sweet huh?
