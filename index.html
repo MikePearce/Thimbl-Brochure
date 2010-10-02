@@ -15,29 +15,104 @@
         <header> 
         	<img src="/img/logo.png"  /> 
             <nav id="menu"> 
-            </nav> 
+            </nav>
         </header> 
-        <div id="bio"> 
-            <table class="clearfix"> 
-            	<thead> 
-            	    <tr>
-                	    <th> 
-                            Thimbl. Be followed at your own domain
-                        </th> 
-                    </tr>
-                </thead> 
-           		<tbody> 
-                    <tr> 
-                        <td>Free, open source and distributed micro-blogging</td> 
-                    </tr> 
-                </tbody> 
-            </table> 
-        </div> 
-        <div id="main" class="clearfix"> 
-            <div id="content"> 
-                
+        <div id="bio" class="clearfix">
+            <div id="awardShout">
+                <a href="#award" class="menu">
+                    We've been nominated! Click here to find out more!
+                </a>
+            </div>
+            <div id="strap">
+                <h1>Thimbl. Be followed at your own domain</h1>
+                <h2>Free, open source and distributed micro-blogging</h2>
             </div> 
         </div> 
+        <div id="main" class="clearfix"> 
+            
+           
+            <div id="content"> 
+                
+            </div>
+
+        </div> 
+        
+        <div id="facebook">
+               <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fthimbl.net&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=dark&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+           </div>
+        <div id="footer">
+            <div class="left twitter">
+                <h3>#thimbl</h3>
+                <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+                <script>
+                new TWTR.Widget({
+                  version: 2,
+                  type: 'search',
+                  search: 'thimbl',
+                  interval: 6000,
+                  title: 'The buzz about #thimbl',
+                  subject: '',
+                  width: 'auto',
+                  height: 218,
+                  theme: {
+                    shell: {
+                      background: '#000000',
+                      color: '#ffffff'
+                    },
+                    tweets: {
+                      background: '#000000',
+                      color: '#ffffff',
+                      links: '#237d78'
+                    }
+                  },
+                  features: {
+                    scrollbar: false,
+                    loop: true,
+                    live: true,
+                    hashtags: true,
+                    timestamp: true,
+                    avatars: true,
+                    toptweets: true,
+                    behavior: 'default'
+                  }
+                }).render().start();
+                </script>
+            </div>
+            <div class="right twitter">
+                <h3>@thimbl</h3>
+                <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+                <script>
+                new TWTR.Widget({
+                  version: 2,
+                  type: 'profile',
+                  rpp: 3,
+                  interval: 6000,
+                  width: 'auto',
+                  height: 200,
+                  theme: {
+                    shell: {
+                      background: '#000000',
+                      color: '#ffffff'
+                    },
+                    tweets: {
+                      background: '#000000',
+                      color: '#ffffff',
+                      links: '#07ebd8'
+                    }
+                  },
+                  features: {
+                    scrollbar: false,
+                    loop: false,
+                    live: true,
+                    hashtags: true,
+                    timestamp: true,
+                    avatars: false,
+                    behavior: 'all'
+                  }
+                }).render().setUser('thimbl').start();
+                </script>
+            </div>
+        </div>
       <script type="text/javascript" src="/js/js.js"></script> 
     </body> 
 </html>
