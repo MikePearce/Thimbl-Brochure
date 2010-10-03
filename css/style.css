@@ -261,3 +261,6 @@ h1, h2, h3 {
 	-webkit-border-bottom-left-radius: 6px;
     width: 780px; margin: auto; padding: 10px; background: #000
 }
+a.addthis_button {
+    float: right;
+}
