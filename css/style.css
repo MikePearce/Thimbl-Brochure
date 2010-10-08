@@ -182,6 +182,9 @@ span.small_reverse a {
 }
 
 /** ITS THE NEW STYLE - B.Boys **/
+div.aboutPage {
+    background: #000 url() !important;
+}
 div.left {
     float: left;
     width: 50%;
@@ -203,19 +206,17 @@ div#strap {
     float: right;
     margin-right: 10px;
 }
-div#awardShout a {
+div#awardShout  {
+    padding: 0;
+    margin: 0;
     float: left;
-    width: 200px;
-    display: block;
-    float: right;
+}
+div#awardShout a img {
+    border: 0;
     padding: 10px;
-    text-align: center;
-    background-color: #000;
-    color: #fff;
-    font-size: 1.2em;
-    border: 1px solid #fff;
+    margin: 0;
     position: absolute;
-    z-index: 999;
+    margin-top: -55px;
 }
 #strap h1, #strap h2 {
  	color: rgb(232,0,120);
@@ -225,12 +226,12 @@ div#awardShout a {
  	text-decoration: none;
 }
 h1 {
-    font-size: 2em;
+    font-size: 2.4em;
     line-height: 40px;
     padding: 5px;
 }
 h2 {
-    font-size: 1.6em;
+    font-size: 1.8em;
     line-height: 35px;
 }
 h3 {
