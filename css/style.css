@@ -264,3 +264,7 @@ h1, h2, h3 {
 a.addthis_button {
     float: right;
 }
+#followUs {
+    float: right;
+    color: #fff;
+}
