@@ -249,9 +249,13 @@ h1, h2, h3 {
     width: 800px;
     margin: auto;
 }
-.twitter {
+.bottomBox {
     padding: 10px;
-    width: 47% !important;
+    width: 38% !important;
+    float: left;
+}
+.faceBookBadge {
+    width: 15% !important;
 }
 #facebook {
     border: 1px solid #fff;
