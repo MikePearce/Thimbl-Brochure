@@ -245,7 +245,8 @@ h1, h2, h3 {
     padding: 4px;
     text-decoration: underline;
 }
-#footer {
+#footer, #getClicky {
+    text-align: center;
     width: 800px;
     margin: auto;
 }
@@ -257,7 +258,7 @@ h1, h2, h3 {
 .faceBookBadge {
     width: 15% !important;
 }
-#facebook {
+#socialBox {
     border: 1px solid #fff;
 	-moz-border-radius-bottomright: 6px;
 	-moz-border-radius-bottomleft: 6px;
@@ -265,10 +266,17 @@ h1, h2, h3 {
 	-webkit-border-bottom-left-radius: 6px;
     width: 780px; margin: auto; padding: 10px; background: #000
 }
-a.addthis_button {
-    float: right;
+#fbLike {
+    float: left;
 }
 #followUs {
-    float: right;
+    float: right;    
     color: #fff;
+}
+#followUs span {
+    display: inline-block;
+}
+#addThisButton {
+    float: right;
+    margin-right: 10px;
 }
