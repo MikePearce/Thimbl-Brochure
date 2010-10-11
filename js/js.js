@@ -35,4 +35,37 @@ $(document).ready(function(){
     function loadData(page, container, callback) {
         $(container).load(page, callback);
     }
+    
+    // Read in the blog
+    moo = function getBlogXmlAndDump(hash)
+    {
+        if (hash != 'blog') {
+            return;
+        }
+        
+        $('#container').load('http://google.com'); // SERIOUSLY!
+        
+        // Check we're on the right page...
+        var url = 'http://www.drumbeat.org/node/109874/blog/feed';
+        
+        $.ajax({
+            type: "GET",
+        	url: url,
+        	dataType: "xml",
+        	success: function(xml) {
+        	    console.log(xml)
+        	    // // for each blog post
+        	    //               $(xml).find('item').each(function(){
+        	    //                   alert('moo')
+        	    //                   var id = $(this).attr('id');
+        	    //                   var title = $(this).find('title').text();
+        	    //                   var url = $(this).find('link').text();
+        	    //                   $('<div class="items" id="link_'+id+'"></div>').html('<a href="'+url+'">'+title+'</a>').appendTo('#blog');
+        	    //               });
+        	}
+        });
+    // And run it
+    }(hash);
+
+    
 });
