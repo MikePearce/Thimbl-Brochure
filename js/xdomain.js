@@ -16,7 +16,7 @@ jQuery.ajax = (function(_ajax){
     var protocol = location.protocol,
         hostname = location.hostname,
         exRegex = RegExp(protocol + '//' + hostname),
-        YQL = 'http' + (/^https/.test(protocol)?'s':'') + '://query.yahooapis.com/v1/public/yql?callback=xml',
+        YQL = 'http' + (/^https/.test(protocol)?'s':'') + '://query.yahooapis.com/v1/public/yql?callback=json',
         query = 'select * from html where url="{URL}" and xpath="*"';
     
     function isExternal(url) {
@@ -57,7 +57,7 @@ jQuery.ajax = (function(_ajax){
                     if (_success) {
                         // Fake XHR callback.
                         _success.call(this, {
-                            responseText: data.results[0]
+                            responseText: data
                                 // YQL screws with <script>s
                                 // Get rid of them
                                 .replace(/<script[^>]+?\/>|<script(.|\s)*?\/script>/gi, '')

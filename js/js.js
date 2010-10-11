@@ -43,25 +43,23 @@ $(document).ready(function(){
             return;
         }
         
-        $('#container').load('http://google.com'); // SERIOUSLY!
-        
         // Check we're on the right page...
-        var url = 'http://www.drumbeat.org/node/109874/blog/feed';
-        
+        var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%22https%3A%2F%2Fwww.drumbeat.org%2Fnode%2F109874%2Fblog%2Ffeed%22&format=json';
+    
         $.ajax({
             type: "GET",
         	url: url,
-        	dataType: "xml",
-        	success: function(xml) {
-        	    console.log(xml)
-        	    // // for each blog post
-        	    //               $(xml).find('item').each(function(){
-        	    //                   alert('moo')
-        	    //                   var id = $(this).attr('id');
-        	    //                   var title = $(this).find('title').text();
-        	    //                   var url = $(this).find('link').text();
-        	    //                   $('<div class="items" id="link_'+id+'"></div>').html('<a href="'+url+'">'+title+'</a>').appendTo('#blog');
-        	    //               });
+        	dataType: "jsonp",
+        	success: function(str) {
+        	    //console.log()
+                // for each blog post
+                $(str.query.results.item).each(function(key, value){                                
+                    var author = value.author;
+                    var title = value.title;
+                    var url = value.link;
+                    var desc = value.description
+                    $('<div class="items"></div>').html('<a href="'+url+'">'+title+'</a><br />'+desc).appendTo('#blog');
+                });
         	}
         });
     // And run it
