@@ -16,8 +16,11 @@ header, section, footer, figure {
 }
 a {
     cursor: pointer;
-	color: white;
 	text-decoration: none;
+	color: #ccc;
+}
+a:hover {
+    text-decoration: underline;
 }
 header {
     width: 800px;
@@ -184,6 +187,13 @@ span.small_reverse a {
 /** ITS THE NEW STYLE - B.Boys **/
 div.blackPage {
     background: #000 url() !important;
+    padding: 10px;
+}
+div.blackPage p {
+    color: #fff;
+}
+div.blackPage ul {
+    padding: 20px;
 }
 div.left {
     float: left;
@@ -243,8 +253,8 @@ h1, h2 {
 h1, h2, h3 {
     background-color: #000;
     color: #fff;
-    padding: 4px;
     text-decoration: underline;
+    margin-left: 20px;
 }
 #footer, #getClicky {
     text-align: center;
@@ -255,6 +265,10 @@ h1, h2, h3 {
     padding: 10px;
     width: 38% !important;
     float: left;
+}
+.bottomBox h3 {
+    margin: 0;
+    padding: 0;
 }
 .faceBookBadge {
     width: 15% !important;
@@ -280,4 +294,23 @@ h1, h2, h3 {
 #addThisButton {
     float: right;
     margin-right: 10px;
+}
+
+/** Blog Stuf **/
+div.items {
+    padding-bottom: 20px;
+}
+div.items p {
+    color: #fff;
+}
+div.items p a {
+    
+}
+div.og_rss_groups {
+    display: none;
+}
+span.date {
+    font-size: 0.8em;
+    color: #fff;
+    padding-left: 20px;
 }
