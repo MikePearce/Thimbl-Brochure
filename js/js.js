@@ -67,6 +67,7 @@ $(document).ready(function(){
                                 '<span class="date">'+ date +'</span><p>'+desc+'</p>'
                         )
                         .appendTo('#blog');
+                    $('#pleaseWait').hide();
                 });
         	}
         });
